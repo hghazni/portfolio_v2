@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Haroon Ghazni</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="stylesheet.css">
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
+<script src="js/skill.bars.jquery.js"></script>
+
+<script>
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+</script>
+  </head>
+
+    <body class="no-touch">
+    <nav class="nav-main">
+      <div class="logo"><a href="http://www.hghazni.com">HGHAZNI</a></div>
+      <div class="under-logo">FRONT-END WEB DESIGNER</div>
+      <ul>
+        <li>
+          <a href="#about" class="nav-item">About</a>
+        </li>
+        <li>
+          <a href="#work" class="nav-item">Work</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="title" >
+
+      <div id="particles-js"></div>
+
+
+      <script src="js/particles.js"></script>
+      <script src="js/app.js"></script>
+
+
+      <script src="js/lib/stats.js"></script>
+
+      <img src="img/hg_avatar.png" alt="Haroon Ghazni" />
+        <h1>I’m Haroon Ghazni.</h1>
+        <h2>A Web Designer from the little big city of Nottingham.</h2>
+    </div>
+    <div class="content" id="about">
+        <h1>Who?</h1>
+        <h3>I'm a Front-end Web Designer based in Nottingham. I produce kick-ass, responsive, clean websites and brands.</h3>
+        <h3>With several years of freelance experience, University and Design Agency placements I've become a well-oiled web coding machine deep in student debt.</h3>
+        <h3>I'm also a hands on individual who isn’t afraid of a pen and paper. I work through the full UX lifecycle from research to design.</h3>
+        <h3>In my spare time when I'm not back-flipping out of a moving plane whilst sipping champagne and coding a website I'll probably be working on my fictional novel. I'm a passionate reader/writer who enjoys sketching my characters and scenes.</h3>
+<div class="content-bottom-space">
+<h1>Languages I know</h1>
+        <div class="skillbar" data-percent="98">
+          <span class="skillbar-title" style="background: #d35400;">HTML5</span>
+          <p class="skillbar-bar" style="background: #e67e22;"></p>
+          <span class="skill-bar-percent"></span>
+        </div>
+
+        <div class="skillbar" data-percent="90">
+          <span class="skillbar-title" style="background: #2980b9;">CSS3</span>
+          <p class="skillbar-bar" style="background: #3498db;"></p>
+          <span class="skill-bar-percent"></span>
+        </div>
+
+
+        <div class="skillbar" data-percent="55">
+            <span class="skillbar-title" style="background: #e3cc32;">JavaScript</span>
+              <p class="skillbar-bar" style="background: #fffd06;"></p>
+            <span class="skill-bar-percent"></span>
+        </div>
+
+        <div class="skillbar" data-percent="65">
+          <span class="skillbar-title" style="background: #2c3e50;">jQuery</span>
+          <p class="skillbar-bar" style="background: #2c3e50;"></p>
+          <span class="skill-bar-percent"></span>
+        </div>
+
+        <div class="skillbar" data-percent="25">
+          <span class="skillbar-title" style="background: #46465e;">PHP</span>
+          <p class="skillbar-bar" style="background: #5a68a5;"></p>
+          <span class="skill-bar-percent"></span>
+        </div>
+<h1>Tools I use</h1>
+        <!-- tools I use start -->
+
+        <div class="skillbar" data-percent="98">
+          <span class="skillbar-title" style="background: #d35400;">Photoshop</span>
+          <p class="skillbar-bar" style="background: #e67e22;"></p>
+          <span class="skill-bar-percent"></span>
+        </div>
+
+        <div class="skillbar" data-percent="75">
+          <span class="skillbar-title" style="background: #2980b9;">Illustrator</span>
+          <p class="skillbar-bar" style="background: #3498db;"></p>
+          <span class="skill-bar-percent"></span>
+        </div>
+
+        <div class="skillbar" data-percent="90">
+          <span class="skillbar-title" style="background: #2c3e50;">Atom.io/Sublime</span>
+          <p class="skillbar-bar" style="background: #2c3e50;"></p>
+          <span class="skill-bar-percent"></span>
+        </div>
+
+        <div class="skillbar" data-percent="80">
+          <span class="skillbar-title" style="background: #46465e;">Balsamiq/Axure</span>
+          <p class="skillbar-bar" style="background: #5a68a5;"></p>
+          <span class="skill-bar-percent"></span>
+        </div>
+
+        <div class="skillbar" data-percent="65">
+          <span class="skillbar-title" style="background: #5f1b8f;">Github</span>
+          <p class="skillbar-bar" style="background: #7f5aa4;"></p>
+          <span class="skill-bar-percent"></span>
+        </div>
+
+        <div class="skillbar" data-percent="30">
+          <span class="skillbar-title" style="background: #6fb649;">NPM/Grunt</span>
+          <p class="skillbar-bar" style="background: #94e44c;"></p>
+          <span class="skill-bar-percent"></span>
+        </div>
+
+        </div>
+
+<script type="text/javascript">
+$('.skillbar').skillBars({
+
+// number start
+from: 0,
+
+// number end
+to: false,
+
+// animation speed
+speed: 1000,
+
+// how often the element should be up
+interval: 100,
+
+// the number of decimal places to show
+decimals: 0,
+
+// callback method for every time the element is updated,
+onUpdate: null,
+
+// callback method for when the element finishes updating
+onComplete: null,
+
+// CSS classes
+classes:{
+  skillBarBar : '.skillbar-bar',
+  skillBarPercent : '.skill-bar-percent',
+}
+
+});
+
+</script>
+
+      </div>
+    </div>
+    <div class="work-header" id="work">
+        <h1>My Work – <span id="brain">Brain</span>,<span id="heart"> Heart</span> and <span id="soul">Soul.</span></h1>
+    </div>
+    <div class="work">
+
+       <div class="box">
+         <div class="boxInner">
+           <img src="http://hghazni.com/v2/img/port/iosis.jpg" />
+           <div class="titleBox">IOSIS Brand design</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+           <a href="mj.html"><img src="http://hghazni.com/v2/img/port/martinjacobytablet.png" /></a>
+           <div class="titleBox">Pianist Bootstrap, HTML5, CSS3, JQuery Website</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+           <img src="http://hghazni.com/v2/img/port/thoughtnova.png" />
+           <div class="titleBox">Thought Nova Logo</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+           <img src="http://hghazni.com/v2/img/port/nottslovepaulsmithtablet.png" />
+           <div class="titleBox">Notts Loves Pauls Smith WordPress Website</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+           <img src="http://hghazni.com/v2/img/port/livingpaint.png" />
+           <div class="titleBox">Living Paint Logo</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+          <a href="http://www.handhtyres.com"> <img src="http://hghazni.com/v2/img/port/h&hwebsitetablet.png" /></a>
+           <div class="titleBox">H&H WordPress E-commerce Website</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+           <img src="http://hghazni.com/v2/img/port/crazycricket.jpg" />
+           <div class="titleBox">Crazy Cricket Logo</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+           <a href="crazycricket.html"><img src="http://hghazni.com/v2/img/port/crazycrickettablet.png" /></a>
+           <div class="titleBox">Crazy Cricket HTML5/Javascript Website</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+           <img src="http://hghazni.com/v2/img/port/nottslovepaulsmith.png" />
+           <div class="titleBox">Notts Loves Paul Smith Brand</div>
+         </div>
+       </div>
+
+       </div>
+       <div class="contact" id="contact">
+          <h1>Come and say hi</h1>
+       </div>
+
+       <div class="contact-form">
+          <h1>Just drop me a line using the form below, it goes straight to my inbox and I’ll get back to you as soon as possible.</h1>
+
+
+          <form method="post" action="http://formspree.io/hghazni@gmail.com">
+                      <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                      <input name="_replyto" type="text" class="feedback-input" placeholder="Email" />
+                      <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                      <input type="submit" value="SUBMIT"/>
+                    </form>
+       </div>
+
+    <div class="footer">
+         <h3> Copyright © <a href="http://hghazni.com">Haroon Ghazni</a>, 2016. </h3>
+     </div>
+</body>
+
+
+</html>

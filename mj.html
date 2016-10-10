@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Haroon Ghazni - Web Designer</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/mj_style.css">
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+</script>
+  </head>
+
+    <body class="no-touch">
+    <nav class="nav-main">
+      <div class="logo"><a href="http://www.hghazni.com">HGHAZNI</a></div>
+      <div class="under-logo">FRONT-END WEB DESIGNER</div>
+      <ul>
+        <li>
+          <a href="index.html#about" class="nav-item">About</a>
+        </li>
+        <li>
+          <a href="index.html#work" class="nav-item">Work</a>
+        </li>
+        <li>
+          <a href="index.html#contact" class="nav-item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- <div class="title" >
+      <img src="img/hg_avatar.png" alt="Haroon Ghazni" />
+        <h1>I’m Haroon Ghazni.</h1>
+        <h2>A Web Designer from the little big city of Nottingham.</h2>
+    </div> -->
+    <div class="content" id="about">
+<img src="img/mj_web.jpg" alt="" />
+<script type="text/javascript">
+var loading = function(e) {
+e.preventDefault();
+e.stopPropagation();
+e.target.classList.add('loading');
+e.target.setAttribute('disabled','disabled');
+setTimeout(function(){
+  e.target.classList.remove('loading');
+  e.target.removeAttribute('disabled');
+},1500);
+};
+
+var btns = document.querySelectorAll('button');
+for (var i=btns.length-1;i>=0;i--) {
+btns[i].addEventListener('click',loading);
+}
+</script>
+        <h1>Pianist HTML5, CSS3, JQuery & Bootstrap Website</h1>
+        <h3>This was a skeletal project I designed for a module in my final year of University.</h3>
+<h3>The client wanted to have full control of the website after the handover so it was decided early on that I would make two websites. One website I would make for my University module and another in the WordPress CMS.</h3>
+<h3>The University one become a skeletal interactive wireframe for the WordPress version to come.</h3>
+<h3>This website showcases responsive design in the Bootstrap framework.</h3>
+<h3>It also demonstrates an understanding of JQuery, Javascript, CSS3 & HTMl5.</h3>
+        <a href="http://fasttracklifeuk.co.uk/mj/"><button id="button-link" data-label="Visit Website"></button></a>
+        <a href="https://hghaznidmp.wordpress.com/"><button id="button-blog" data-label="Visit Project Blog"></button></a>
+
+    </div>
+    <!-- <div class="work-header" id="work">
+        <h1>My Work – <span id="brain">Brain</span>,<span id="heart"> Heart</span> and <span id="soul">Soul.</span></h1>
+    </div> -->
+    <!-- <div class="work">
+
+       <div class="box">
+         <div class="boxInner">
+           <img src="http://hghazni.com/v2/img/port/iosis.jpg" />
+           <div class="titleBox">IOSIS Brand design</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+           <a href="http://fasttracklifeuk.co.uk/mj/"><img src="http://hghazni.com/v2/img/port/martinjacobytablet.png" /></a>
+           <div class="titleBox">Pianist Bootstrap, HTML5, CSS3, JQuery Website</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+           <img src="http://hghazni.com/v2/img/port/thoughtnova.png" />
+           <div class="titleBox">Thought Nova Logo</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+           <img src="http://hghazni.com/v2/img/port/nottslovepaulsmithtablet.png" />
+           <div class="titleBox">Notts Loves Pauls Smith WordPress Website</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+           <img src="http://hghazni.com/v2/img/port/livingpaint.png" />
+           <div class="titleBox">Living Paint Logo</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+          <a href="http://www.handhtyres.com"> <img src="http://hghazni.com/v2/img/port/h&hwebsitetablet.png" /></a>
+           <div class="titleBox">H&H WordPress E-commerce Website</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+           <img src="http://hghazni.com/v2/img/port/crazycricket.jpg" />
+           <div class="titleBox">Crazy Cricket Logo</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+           <a href="port/crazycricket/index.htm"><img src="http://hghazni.com/v2/img/port/crazycrickettablet.png" /></a>
+           <div class="titleBox">Crazy Cricket HTML5/Javascript Website</div>
+         </div>
+       </div>
+       <div class="box">
+         <div class="boxInner">
+           <img src="http://hghazni.com/v2/img/port/nottslovepaulsmith.png" />
+           <div class="titleBox">Notts Loves Paul Smith Brand</div>
+         </div>
+       </div>
+
+       </div>
+       <div class="contact" id="contact">
+          <h1>Come and say hi</h1>
+       </div>
+
+       <div class="contact-form">
+          <h1>Just drop me a line using the form below, it goes straight to my inbox and I’ll get back to you as soon as possible.</h1>
+
+
+          <form method="post" action="http://formspree.io/hghazni@gmail.com">
+                      <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                      <input name="_replyto" type="text" class="feedback-input" placeholder="Email" />
+                      <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                      <input type="submit" value="SUBMIT"/>
+                    </form>
+       </div> -->
+
+    <div class="footer">
+         <h3> Copyright © <a href="http://hghazni.com">Haroon Ghazni</a>, 2016. </h3>
+     </div>
+</body>
+
+
+</html>
